@@ -5,7 +5,7 @@ import styles from "../styles/Header.module.css";
 
 const Header: NextComponentType = () => {
   return (
-    <header className={styles.header_container}>
+    <header className={styles.header_container} id="home">
       <Image className={styles.header_image} src='/assets/landing_bg.jpg' layout="fill" objectFit="cover" alt="slika kuhinje sa stolicama, stolom, radnim delovima, policama, sudoperom, friziderom i sporetom"/>
       <div className={styles.wrapper}></div>
       <div className={styles.header_title}>

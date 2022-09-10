@@ -1,22 +1,25 @@
 .navbar {
-  z-index: 1;
+  z-index: 5;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
   border-bottom: 1px solid #eaeaea;
   height: 4rem;
+  width: 100%;
   color: #000;
   font-weight: 700;
   text-transform: uppercase;
   padding: 0 8rem;
+  position: fixed;
 }
+
 .navbar_logo_inner_text {
-  font-weight: 500;
+  font-weight: 600;
 }
 .navbar_menu_list {
   font-size: .8rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 /* Desktop */
@@ -41,18 +44,26 @@
   width: 100%;
 }
 
-@media screen and (max-width: 860px){
+@media screen and (max-width: 1024px) {
   .navbar {
     padding: 0 2rem;
   }
+}
+
+@media screen and (max-width: 860px){
   .navbar_menu_list_item {
       padding: .8rem 1rem;
       border-bottom: 1px solid #eaeaea;
   }
 }
 
-@media screen and (max-width: 1024px){
-  .navbar {
-    padding: 0 2rem;
+/* when scrolled above on screen above 860px*/
+@media screen and (min-width: 860px)  {
+  .scrolled {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: none;
+    color: #fff;
   }
 }
