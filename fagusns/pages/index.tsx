@@ -5,6 +5,7 @@ import styles from '../styles/Home.module.css'
 import Navbar from '../components/Navbar'
 import Header from '../components/Header'
 import About from '../components/About'
+import WhatWeDo from '../components/WhatWeDo'
 
 const Home: NextPage = () => {
   return (
@@ -17,9 +18,7 @@ const Home: NextPage = () => {
       <Navbar />
       <Header />
       <About />
-      <div>
-        
-      </div>
+      <WhatWeDo />
     </div>
   )
 }
